@@ -6,12 +6,11 @@ Sorry English speakers! We are working on a English version of this tutorial. Fo
 
 Hay múltiples motivos por los que uno no querría borrar su cuenta para poder deshacerse de sus tweets antiguos. Sin embargo, Twitter hace prácticamente imposible eliminar más allá de la barrera que ha impuesto con el API de los 3200 tweets. Hay algunas aplicaciones en Google que sirven para esto, pero todas tienen el problema de que están capadas para que el usuario pague una tarifa por administrar sus propios tweets. Así pues, hace un par de años empezaron a aparecer códigos para scripts de Python que permitían borrar tus propios tweets con acceso al API mediante el Developer Portal de Twitter y tu propio archivo. La mayoría de ellos son actualmente inservibles porque recientemente Twitter ha migrado de la versión 1.1 de su API a la v2, modificando variables, endpoints y limitando, asimismo, el acceso que tienen los usuarios a la API, creando en su Developer portal categorías de usuarios como ‘Essencial, Advanced o Academic’. 
 
-Nosotros creemos que debería ser un derecho de cada usuario poder administrar su imagen pública en las redes social de manera gratuita, y más cuando las mismas se pueden emplear para identificar a sujetos revolucionarios o agitativos. Precisamente por eso hemos creado, basándonos en el código de ESTA PERSONA esta herramienta de autodefensa antifascista gratuita tratando de saltar las limitaciones de Twitter y jugando con ellas en contra. Hasta la victoria siempre, camaradas.
+Nosotros creemos que debería ser un derecho de cada usuario poder administrar su imagen pública en las redes social de manera gratuita, y más cuando las mismas se pueden emplear para identificar a sujetos revolucionarios o agitativos. Precisamente por eso hemos creado, basándonos en el código de [Alberta Odamea Anim-Ayeko](https://towardsdatascience.com/python-tweet-deleter-3b1154830f3a/), esta herramienta de autodefensa antifascista gratuita tratando de saltar las limitaciones de Twitter y jugando con ellas en contra. Hasta la victoria siempre, camaradas.
 
-##¿QUÉ NECESITO PARA BORRAR MIS TWEETS?
-1. **Tu archivo de Twitter**: Para ver cómo se descarga, leer [esto] 
-(https://help.twitter.com/es/managing-your-account/how-to-download-your-twitter-archive). Puede tardar unos días, así que paciencia.
-2. Tener una cuenta en el Developer Portal de Twitter y un proyecto: Primero deberás acceder aquí: https://developer.twitter.com/en. Una vez ahí, hay que registrarse con la cuenta en la que deseas borrar los tweets (esto es importante, porque si quieres borrar otras cuentas tendrías que emplear otros permisos y código). Al registrarnos nos va a preguntar qué uso queremos darle a la cuenta. Recomendamos simplemente seleccionar ‘Exploring the API’ y por supuesto que no vamos a hacer contenido derivado para ningún gobierno.
+### ¿QUÉ NECESITO PARA BORRAR MIS TWEETS?
+1. **Tu archivo de Twitter**: Para ver cómo se descarga, leer [esto](https://help.twitter.com/es/managing-your-account/how-to-download-your-twitter-archive/). Puede tardar unos días, así que paciencia.
+2. **Tener una cuenta en el Developer Portal de Twitter y un proyecto**: Primero deberás acceder [aquí](https://developer.twitter.com/en/). Una vez ahí, hay que registrarse con la cuenta en la que deseas borrar los tweets (esto es importante, porque si quieres borrar otras cuentas tendrías que emplear otros permisos y código). Al registrarnos nos va a preguntar qué uso queremos darle a la cuenta. Recomendamos simplemente seleccionar ‘Exploring the API’ y por supuesto que no vamos a hacer contenido derivado para ningún gobierno.
  
 Twitter da automáticamente a todos los usuarios acceso a la versión Essential, que es más que suficiente para lo que queremos usarlo nosotros. Para poder seguir, debemos crear un proyecto. 
  
@@ -22,7 +21,8 @@ Se nos generarán unos códigos de la app. Esos códigos es lo que estamos busca
  
  
 Los códigos que se nos generan en un primer momento nos otorgan únicamente permisos de ‘Read only’. Es importante cambiemos esos permisos a ‘Read and Write’, regeneremos los códigos y los copiemos en una hoja de texto. Si no tenemos permisos ‘Read and Write’ el programa nos dirá que estamos Unauthorized para borrar los tweets.
-3. Tener descargado Python: https://www.python.org/downloads/
+
+3. **Tener descargado Python**: [Aquí](https://www.python.org/downloads/)
 ¿CÓMO BORRO LOS TWEETS Y USO EL CÓDIGO?
 1. Primero, debes crear una carpeta en tu escritorio (o donde quieras) en la que vas a copiar el archivo ‘tweet.js’ que vas a encontrar en la carpeta ‘data’ del archivo de Twitter.
 2. En la barra de búsqueda de Windows, buscar ‘cmd’ y hacer clic en la aplicación ‘Símbolo de sistema’.
