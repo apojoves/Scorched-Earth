@@ -29,6 +29,16 @@ Ahí creáis un proyecto y dentro del mismo una app. La app podéis llamarla com
  
 Los códigos que se nos generan en un primer momento nos otorgan únicamente permisos de ‘Read only’. Es importante cambiemos esos permisos a ‘Read and Write’, regeneremos los códigos y los copiemos en una hoja de texto. Si no tenemos permisos ‘Read and Write’ el programa nos dirá que estamos Unauthorized para borrar los tweets.
 
+### ACTUALIZACIÓN IMPORTANTE
+
+Se ha subido un archivo .exe descargable (archivo .zip ScorchedEarth(2)) que evita tener que codificar ni usar el código viejo (ScorchedEarth.py) como estaba recogido en el tutorial. Este ejecutable simplemente se descarga y aparecerá una interfaz como el de la imagen.
+
+![FcIULJQWQAA06RA](https://user-images.githubusercontent.com/112905248/195590027-ffe8e4a9-6c0f-413e-82d8-4cb0efe798a4.jpg)
+
+Como podéis ver, el programa solicita que se le introduzcan las claves que he explicado anteriormente y solicita poder cargar el archivo tweet.js que se encuentra dentro de la carpeta 'data' del Archivo de twitter que se explica como descargar en el punto 1. Una vez se han introducido las fechas, se le da a Go y comienza a borrar los tweets. Aún así, dejo el tutorial viejo de cómo ejecutar con la consola del ordenador por si alguien prefiere descargarse el archivo .py al .exe.
+
+
+<details> <summary> Cómo usar la versión vieja del código </summary> 
 
 **Tener descargado Python**: [Aquí](https://www.python.org/downloads/)
 
@@ -86,6 +96,8 @@ Una vez editado el archivo, lo guardamos. Volvemos a la pantalla del terminal y 
 Una vez hecho eso, tecleamos ‘python ScorchedEarth.py’ y el programa se ejecutará.
 
 ![12](https://user-images.githubusercontent.com/112905248/188514097-2623899c-743b-417c-a37e-cf57fb5caf62.png)
+
+</details>
 
  
 ### VARIAS CONSIDERACIONES
